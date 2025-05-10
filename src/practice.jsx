@@ -28,7 +28,8 @@ function ColorChanger() {
       <button style={{ border: "2px solid black" }}onClick={() => setColor("green")} >Green</button> <nb />
       <button style={{ border: "2px solid black" }} onClick={() => setColor("red")}>Red</button>
 
-      
+      <hr/>
+      <h2>Hello</h2>
     </div>
   );
 }
