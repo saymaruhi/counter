@@ -36,12 +36,10 @@ function Text(){
   return(
     <div>
       <h2>3. Show/Hide Text</h2>
-      {display && (
-      <p>This is my Show and Hide  Toggel</p>
-    )}
+      {display && (<p>This is my Show and Hide  Toggel</p>)}
       
      
-     <button onClick={()=> setDisplay(!display)}> {display ? "Hide" : "Show"}
+     <button style={{border: '2px solid blue', color: "blue"}} onClick={()=> setDisplay(!display)}> {display ? "Hide" : "Show"}
      </button>
       </div>
   )
