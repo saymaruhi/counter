@@ -1,6 +1,7 @@
 
 import { useState } from "react"
 import ColorChanger, {Text} from "./practice"
+import Clock from "./propsTask"
 
 function App() {
   const[count, setCount]= useState(1)
@@ -22,6 +23,7 @@ function App() {
 
        <ColorChanger />
        <Text />
+       <Clock />
        
        
      
