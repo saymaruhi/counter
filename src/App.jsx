@@ -1,10 +1,11 @@
 
 import { useState } from "react"
 import ColorChanger, {Text} from "./practice"
-import Clock from "./propsTask"
+import Clock from "./clock"
 
 function App() {
   const[count, setCount]= useState(1)
+  const[color,setColor]= useState("green")
  
   return (
     
@@ -23,9 +24,17 @@ function App() {
 
        <ColorChanger />
        <Text />
-       <Clock />
        
+       <Clock color={color}/>
+       <select style={{width: "100px"}} onChange={(event) => setColor(event.target.value)}>
+        <option value={"red"}>Red</option>
+        <option value={"blue"}>Blue</option>
+        <option value={"green"}>Green</option>
+        <option value={"orange"}>Orange</option>
+        
+       </select>
        
+        
      
        
       </div>

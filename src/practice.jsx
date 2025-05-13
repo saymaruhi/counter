@@ -42,6 +42,7 @@ function Text(){
      <button style={{border: '2px solid blue', color: "blue"}} onClick={()=> setDisplay(!display)}> {display ? "Hide" : "Show"}
      </button>
      <hr />
+     
       </div>
   )
 }
